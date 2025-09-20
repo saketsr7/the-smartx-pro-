@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smartphone Landing Page</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { line-height: 1.6; color: #333; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+    .hero button {
+      padding: 12px 25px; font-size: 1rem; border: none; 
+      background: #e67e22; color: #fff; border-radius: 5px; cursor: pointer;
+    }
+
+    /* Sections */
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 30px; color: #2c3e50; }
+
+    /* Features */
+    .features {
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+      gap: 20px;
+    }
+    .feature-box {
+      padding: 20px; border: 1px solid #ddd; border-radius: 10px; text-align: center;
+      background: #f9f9f9;
+    }
+
+    /* Pricing */
+    .pricing {
+      text-align: center;
+      background: #f0f4f8;
+      padding: 40px;
+      border-radius: 10px;
+    }
+    .pricing h3 { font-size: 2rem; margin-bottom: 10px; }
+    .pricing p { margin-bottom: 20px; }
+    .pricing button {
+      padding: 12px 25px; font-size: 1rem; border: none; 
+      background: #27ae60; color: #fff; border-radius: 5px; cursor: pointer;
+    }
+
+    /* Contact */
+    .contact form {
+      display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin: auto;
+    }
+    .contact input, .contact textarea {
+      padding: 10px; border: 1px solid #ccc; border-radius: 5px;
+    }
+    .contact button {
+      padding: 12px; background: #3498db; color: #fff; border: none; border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center; padding: 20px; background: #2c3e50; color: #fff; margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Introducing the Smart X Pro</h1>
+    <p>The future of smartphones is here. Faster, smarter, sleeker.</p>
+    <button onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">
+      Buy Now
+    </button>
+  </div>
+
+  <!-- Product Description -->
+  <section>
+    <h2>About Smart X Pro</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      The Smart X Pro is designed to redefine mobile technology. With its cutting-edge performance, 
+      crystal-clear display, and long-lasting battery life, it ensures you stay connected, productive, and entertained all day long.
+    </p>
+  </section>
+
+  <!-- Features -->
+  <section>
+    <h2>Features & Benefits</h2>
+    <div class="features">
+      <div class="feature-box"><h3>⚡ Fast Performance</h3><p>Powered by the latest processor for smooth multitasking.</p></div>
+      <div class="feature-box"><h3>📷 Stunning Camera</h3><p>Capture every moment with 108MP ultra-clear lens.</p></div>
+      <div class="feature-box"><h3>🔋 Long Battery</h3><p>5000mAh battery with fast charging keeps you going.</p></div>
+      <div class="feature-box"><h3>🌐 5G Ready</h3><p>Experience blazing-fast internet with 5G support.</p></div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="pricing">
+    <h2>Special Offer</h2>
+    <h3>₹49,999</h3>
+    <p>Pre-order today and get wireless earbuds free!</p>
+    <button>Order Now</button>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Smart X Pro. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
